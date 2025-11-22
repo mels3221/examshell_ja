@@ -1,3 +1,4 @@
+[EN]
 Assignment name: argo
 Expected files: argo.c
 Allowed functions: getc, ungetc, printf, malloc, calloc, realloc, free, isdigit, fscanf, write
@@ -24,6 +25,53 @@ In case of doubt how to parse json, read rfc8259. But you won't need it as the f
 There are some functions in argo.c that might help you.
 
 Examples that should work:
+
+$> echo -n '1' | ./argo /dev/stdin | cat -e
+1$
+$> echo -n '"bonjour"' | ./argo /dev/stdin | cat -e
+"bonjour"$
+$> echo -n '"escape! \" "' | ./argo /dev/stdin | cat -e
+"escape! \" "$
+$> echo -n '{"tomatoes":42,"potatoes":234}' | ./argo /dev/stdin | cat -e
+{"tomatoes":42,"potatoes":234}$
+$> echo -n '{"recursion":{"recursion":{"recursion":{"recursion":"recursion"}}}}' | ./argo /dev/stdin | cat -e
+{"recursion":{"recursion":{"recursion":{"recursion":"recursion"}}}}$
+$> echo -n '"unfinished string' | ./argo /dev/stdin | cat -e
+unexpected end of input$
+$> echo -n '"unfinished string 2\"' | ./argo /dev/stdin | cat -e
+unexpected end of input$
+$> echo -n '{"no value?":}' | ./argo /dev/stdin | cat -e
+unexpected token '}'$
+
+[JA]
+課題名: argo
+提出ファイル: argo.c
+使用可能な関数: getc, ungetc, printf, malloc, calloc, realloc, free, isdigit, fscanf, write
+-----------------
+argo.h で宣言された構造体に JSON ファイルを解析する関数 argo を作成してください:
+
+int	argo(json *dst, FILE *stream);
+
+	dst	- 作成する AST へのポインタ
+	stream	- 解析するファイル (man FILE)
+
+関数は成功時に 1 を返し、失敗時に -1 を返します。
+予期しないトークンが見つかった場合、stdout に次のメッセージを出力します:
+"Unexpected token '%c'\n"
+トークンが EOF の場合:
+"Unexpected end of input\n"
+
+数値、文字列、マップのみを処理します。
+数値は scanf("%d") のような基本的な整数のみです。
+文字列のエスケープは、バックスラッシュと引用符のみを処理します (\n \u などは処理しません)。
+スペースは処理しません -> 無効なトークンと見なします。
+
+JSON の解析方法について疑問がある場合は、rfc8259 を読んでください。しかし、形式は
+シンプルなので必要ないでしょう。main でテストすると、出力は入力と正確に同じである
+必要があります (エラーを除く)。
+argo.c には役立つ関数がいくつかあります。
+
+動作する例:
 
 $> echo -n '1' | ./argo /dev/stdin | cat -e
 1$

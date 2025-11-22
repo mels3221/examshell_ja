@@ -1,3 +1,4 @@
+[EN]
 Assignment name  : sandbox
 Expected files   : sandbox.c
 Allowed functions: fork, waitpid, exit, alarm, sigaction, kill, printf, strsignal,
@@ -24,3 +25,31 @@ If verbose is true, you must write the appropriate message among the following:
 You must not leak processes (even in zombie state, this will be checked using wait).
 
 We will test your code with very bad functions.
+
+[JA]
+課題名         : sandbox
+提出ファイル   : sandbox.c
+使用可能な関数 : fork, waitpid, exit, alarm, sigaction, kill, printf, strsignal,
+errno, sigaddset, sigemptyset, sigfillset, sigdelset, sigismember
+--------------------------------------------------------------------------------------
+
+以下の関数を作成してください:
+
+#include <stdbool.h>
+int sandbox(void (*f)(void), unsigned int timeout, bool verbose);
+
+この関数は、関数 f が良い関数か悪い関数かをテストする必要があります。
+f が良い場合は 1 を返し、f が悪い場合は 0 を返し、関数内でエラーが発生した場合は -1 を返します。
+
+関数は、シグナル(セグメンテーション違反、中止など)によって終了または停止された場合、
+0 以外の終了コードで終了した場合、またはタイムアウトした場合に悪いと見なされます。
+
+verbose が true の場合、次の中から適切なメッセージを出力する必要があります:
+"Nice function!\n"
+"Bad function: exited with code <exit_code>\n"
+"Bad function: <signal description>\n"
+"Bad function: timed out after <timeout> seconds\n"
+
+プロセスをリークさせてはいけません(ゾンビ状態でも、これは wait を使用してチェックされます)。
+
+非常に悪い関数でコードをテストします。
