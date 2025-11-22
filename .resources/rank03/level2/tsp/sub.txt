@@ -1,3 +1,4 @@
+[EN]
 Assignment name: tsp
 Expected files: *.c *.h
 Allowed functions: write, sqrtf, getline, fseek, fscanf, ferror, feof,
@@ -41,7 +42,7 @@ the shortest path is:
 so you should print the length of this path that is:
 8.00
 
-Write a program that will read a set of city coordinates in the form 
+Write a program that will read a set of city coordinates in the form
 '%f, %f\n' from the standard input and will print the length of the shortest
 possible path containing all these cities under the form '%.2f'.
 
@@ -62,3 +63,65 @@ $> ./tsp < square.txt | cat -e
 4.00$
 
 Hint : in order to use sqrtf , add -lm at the end of your compilation command
+
+[JA]
+課題名: tsp
+提出ファイル: *.c *.h
+使用可能な関数: write, sqrtf, getline, fseek, fscanf, ferror, feof,
+fabsf, memcpy, fprintf, fclose, malloc, calloc, realloc, free, fopen,
+errno, stderr, stdin, stdout
+-------------------------------------------------------
+
+この問題を「巡回セールスマン問題」として言及した最初の出版物は、
+Julia Robinson による 1949 年の RAND Corporation レポート
+「On the Hamiltonian game (a traveling salesman problem)」にあります。
+
+彼女は問題を次のように定義しています:
+
+「このメモの目的は、巡回セールスマン問題に関連する問題を解決する方法を提供することです。
+元の問題の説明をすることは価値があるようです。1つの定式化は、ワシントンから出発し、
+すべての州都を訪れ、その後ワシントンに戻るセールスマンの最短経路を見つけることです。
+
+より一般的には、平面上の n 個の与えられた点を含む最短の閉曲線を見つけることです。」
+
+例えば、以下の都市の集合:
+0, 0
+1, 0
+2, 0
+0, 1
+1, 1
+2, 1
+1, 2
+2, 2
+これは次のように表すことができます:
++ + +
++ + +
+  + +
+最短経路は:
+ _____
+|__   |
+   |__|
+
+したがって、このパスの長さを出力する必要があります:
+8.00
+
+標準入力から '%f, %f\n' の形式で都市座標の集合を読み取り、
+これらすべての都市を含む最短経路の長さを '%.2f' の形式で出力するプログラムを作成してください。
+
+プログラムは 11 都市を超えてテストされることはありません。
+
+このディレクトリには、この演習のすべての退屈な部分を含むファイル tsp.c と、
+プログラムをテストするのに役立つサンプルファイルがあります。
+
+ヒント: sqrtf を使用するには、コンパイルコマンドの最後に -lm を追加してください。
+
+例えば、以下のように動作する必要があります:
+$> cat square.txt
+1, 1
+0, 1
+1, 0
+0, 0
+$> ./tsp < square.txt | cat -e
+4.00$
+
+ヒント: sqrtf を使用するには、コンパイルコマンドの最後に -lm を追加してください
