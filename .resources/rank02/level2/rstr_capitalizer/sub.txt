@@ -3,16 +3,15 @@ Expected files   : rstr_capitalizer.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes one or more strings and, for each argument, puts 
-the last character that is a letter of each word in uppercase and the rest
-in lowercase, then displays the result followed by a \n.
+1つ以上の文字列を受け取り、各引数について、各単語の文字である最後の文字を大文字にし、
+残りを小文字にし、その結果を表示し、その後に\nを出力するプログラムを作成してください。
 
-A word is a section of string delimited by spaces/tabs or the start/end of the
-string. If a word has a single letter, it must be capitalized.
+単語とは、スペースやタブで区切られた文字列の一部分、または文字列の開始/終了によって
+区切られた部分のことです。単語が1文字のみの場合、それは大文字にする必要があります。
 
-A letter is a character in the set [a-zA-Z]
+文字とは、[a-zA-Z]のセット内の文字です。
 
-If there are no parameters, display \n.
+パラメータがない場合、\nを表示してください。
 
 Examples:
 

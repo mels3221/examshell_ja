@@ -1,28 +1,25 @@
 Assignment name  : sort_list
 Expected files   : sort_list.c
-Allowed functions: 
+Allowed functions:
 --------------------------------------------------------------------------------
-Write the following functions:
+以下の関数を作成してください:
 
 t_list	*sort_list(t_list* lst, int (*cmp)(int, int));
 
-This function must sort the list given as a parameter, using the function 
-pointer cmp to select the order to apply, and returns a pointer to the 
-first element of the sorted list.
+この関数は、パラメータとして与えられたリストをソートし、関数ポインタcmpを使用して
+適用する順序を選択し、ソートされたリストの最初の要素へのポインタを返す必要があります。
 
-Duplications must remain.
-Inputs will always be consistent.
+重複は残す必要があります。
+入力は常に一貫性があります。
 
-You must use the type t_list described in the file list.h 
-that is provided to you. You must include that file 
-(#include "list.h"), but you must not turn it in. We will use our own 
-to compile your assignment.
+提供されるファイルlist.hに記述されている型t_listを使用する必要があります。
+そのファイルをインクルードする必要がありますが(#include "list.h")、提出する必要は
+ありません。課題のコンパイルには独自のものを使用します。
 
-Functions passed as cmp will always return a value different from 
-0 if a and b are in the right order, 0 otherwise.
+cmpとして渡される関数は、aとbが正しい順序である場合は0とは異なる値を返し、
+そうでない場合は0を返します。
 
-For example, the following function used as cmp will sort the list 
-in ascending order:
+例えば、cmpとして使用される以下の関数は、リストを昇順にソートします:
 
 int ascending(int a, int b)
 {
@@ -36,4 +33,4 @@ struct s_list {
     int data;
     t_list *next;
 };
-YOU MUST TEST WITH YOUR LIST.H FILE JUST FOR THIS SHELL.
+このシェルでは、自分のLIST.Hファイルでテストする必要があります。

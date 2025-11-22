@@ -3,12 +3,11 @@ Expected files   : ft_split.c
 Allowed functions: malloc
 --------------------------------------------------------------------------------
 
-Write a function that takes a string, splits it into words, and returns them as
-a NULL-terminated array of strings.
+文字列を受け取り、それを単語に分割し、NULL終端の文字列配列として返す関数を作成してください。
 
-A "word" is defined as a part of a string delimited either by spaces/tabs/new
-lines, or by the start/end of the string.
+「単語」とは、スペース/タブ/改行で区切られた文字列の一部分、または文字列の開始/終了によって
+区切られた部分のことです。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 char    **ft_split(char *str);

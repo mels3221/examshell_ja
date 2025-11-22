@@ -3,14 +3,14 @@ Expected files   : wdmatch.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes two strings and checks whether it's possible to
-write the first string with characters from the second string, while respecting
-the order in which these characters appear in the second string.
+2つの文字列を受け取り、2番目の文字列の文字を使って最初の文字列を書くことが可能かを
+チェックするプログラムを作成してください。2番目の文字列内でこれらの文字が現れる順序を
+尊重する必要があります。
 
-If it's possible, the program displays the string, followed by a \n, otherwise
-it simply displays a \n.
+可能な場合、プログラムはその文字列を表示し、その後に\nを出力します。不可能な場合は
+単に\nを表示します。
 
-If the number of arguments is not 2, the program displays a \n.
+引数の数が2でない場合、プログラムは\nを表示します。
 
 Examples:
 

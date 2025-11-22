@@ -3,13 +3,13 @@ Expected files   : sort_int_tab.c
 Allowed functions:
 --------------------------------------------------------------------------------
 
-Write the following function:
+以下の関数を作成してください:
 
 void sort_int_tab(int *tab, unsigned int size);
 
-It must sort (in-place) the 'tab' int array, that contains exactly 'size'
-members, in ascending order.
+この関数は、正確に'size'個のメンバーを含む'tab' int配列を(その場で)昇順にソートする
+必要があります。
 
-Doubles must be preserved.
+重複は保持される必要があります。
 
-Input is always coherent.
+入力は常に一貫性があります。

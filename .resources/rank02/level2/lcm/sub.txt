@@ -3,26 +3,23 @@ Expected files   : lcm.c
 Allowed functions:
 --------------------------------------------------------------------------------
 
-Write a function who takes two unsigned int as parameters and returns the
-computed LCM of those parameters.
+2つのunsigned intをパラメータとして受け取り、それらのパラメータの最小公倍数(LCM)を
+計算して返す関数を作成してください。
 
-LCM (Lowest Common Multiple) of two non-zero integers is the smallest postive
-integer divisible by the both integers.
+LCM(最小公倍数)とは、2つのゼロでない整数の両方で割り切れる最小の正の整数です。
 
-A LCM can be calculated in two ways:
+LCMは2つの方法で計算できます:
 
-- You can calculate every multiples of each integers until you have a common
-multiple other than 0
+- 0以外の公倍数が見つかるまで、各整数のすべての倍数を計算することができます。
 
-- You can use the HCF (Highest Common Factor) of these two integers and
-calculate as follows:
+- これら2つの整数のHCF(最大公約数)を使用し、以下のように計算することができます:
 
 	LCM(x, y) = | x * y | / HCF(x, y)
 
-  | x * y | means "Absolute value of the product of x by y"
+  | x * y | は「xとyの積の絶対値」を意味します
 
-If at least one integer is null, LCM is equal to 0.
+少なくとも1つの整数がnullの場合、LCMは0に等しくなります。
 
-Your function must be prototyped as follows:
+関数は以下のようにプロトタイプ宣言する必要があります:
 
   unsigned int    lcm(unsigned int a, unsigned int b);

@@ -3,16 +3,14 @@ Expected files   : str_capitalizer.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes one or several strings and, for each argument,
-capitalizes the first character of each word (If it's a letter, obviously),
-puts the rest in lowercase, and displays the result on the standard output,
-followed by a \n.
+1つまたは複数の文字列を受け取り、各引数について、各単語の最初の文字を大文字にし
+(明らかに文字の場合)、残りを小文字にし、結果を標準出力に表示し、その後に\nを
+出力するプログラムを作成してください。
 
-A "word" is defined as a part of a string delimited either by spaces/tabs, or
-by the start/end of the string. If a word only has one letter, it must be
-capitalized.
+「単語」とは、スペースやタブで区切られた文字列の一部分、または文字列の開始/終了によって
+区切られた部分のことです。単語が1文字のみの場合、それは大文字にする必要があります。
 
-If there are no arguments, the progam must display \n.
+引数がない場合、プログラムは\nを表示する必要があります。
 
 Example:
 

@@ -1,16 +1,15 @@
 Assignment name  : ft_list_size
 Expected files   : ft_list_size.c
-Allowed functions: 
+Allowed functions:
 --------------------------------------------------------------------------------
 
-Write a function that returns the number of elements in the linked list that's
-passed to it.
+渡された連結リスト内の要素数を返す関数を作成してください。
 
-It must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 int	ft_list_size(t_list *begin_list);
 
-You must use the following structure in your program ft_list_size.c :
+プログラムft_list_size.cでは以下の構造体を使用する必要があります:
 
 typedef struct    s_list
 {

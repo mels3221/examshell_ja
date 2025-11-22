@@ -3,10 +3,10 @@ Expected files   : print_hex.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes a positive (or zero) number expressed in base 10,
-and displays it in base 16 (lowercase letters) followed by a newline.
+10進数で表現された正の数(またはゼロ)を受け取り、それを16進数(小文字)で表示し、その後に
+改行を出力するプログラムを作成してください。
 
-If the number of parameters is not 1, the program displays a newline.
+パラメータの数が1でない場合、プログラムは改行を表示します。
 
 Examples:
 

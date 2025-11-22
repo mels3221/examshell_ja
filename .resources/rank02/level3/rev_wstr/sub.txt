@@ -3,18 +3,15 @@ Expected files   : rev_wstr.c
 Allowed functions: write, malloc, free
 --------------------------------------------------------------------------------
 
-Write a program that takes a string as a parameter, and prints its words in 
-reverse order.
+文字列をパラメータとして受け取り、その単語を逆順に表示するプログラムを作成してください。
 
-A "word" is a part of the string bounded by spaces and/or tabs, or the 
-begin/end of the string.
+「単語」とは、スペースやタブで区切られた文字列の一部分、または文字列の開始/終了によって
+区切られた部分のことです。
 
-If the number of parameters is different from 1, the program will display 
-'\n'.
+パラメータの数が1と異なる場合、プログラムは'\n'を表示します。
 
-In the parameters that are going to be tested, there won't be any "additional" 
-spaces (meaning that there won't be additionnal spaces at the beginning or at 
-the end of the string, and words will always be separated by exactly one space).
+テストされるパラメータには、「追加の」スペースはありません(つまり、文字列の最初や最後に
+追加のスペースはなく、単語は常に正確に1つのスペースで区切られます)。
 
 Examples:
 

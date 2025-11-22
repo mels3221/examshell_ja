@@ -3,18 +3,16 @@ Expected files   : ft_atoi_base.c
 Allowed functions: None
 --------------------------------------------------------------------------------
 
-Write a function that converts the string argument str (base N <= 16)
-to an integer (base 10) and returns it.
+文字列引数str(基数N <= 16)を整数(10進数)に変換して返す関数を作成してください。
 
-The characters recognized in the input are: 0123456789abcdef
-Those are, of course, to be trimmed according to the requested base. For
-example, base 4 recognizes "0123" and base 16 recognizes "0123456789abcdef".
+入力で認識される文字は: 0123456789abcdef
+これらは、もちろん要求された基数に応じて切り詰められます。例えば、基数4は"0123"を認識し、
+基数16は"0123456789abcdef"を認識します。
 
-Uppercase letters must also be recognized: "12fdb3" is the same as "12FDB3".
+大文字も認識される必要があります: "12fdb3"は"12FDB3"と同じです。
 
-Minus signs ('-') are interpreted only if they are the first character of the
-string.
+マイナス記号('-')は、文字列の最初の文字である場合にのみ解釈されます。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 int	ft_atoi_base(const char *str, int str_base);

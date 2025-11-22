@@ -3,14 +3,14 @@ Expected files   : reverse_bits.c
 Allowed functions:
 --------------------------------------------------------------------------------
 
-Write a function that takes a byte, reverses it, bit by bit (like the
-example) and returns the result.
+バイトを受け取り、それをビット単位で反転させ(以下の例のように)、結果を返す関数を
+作成してください。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 unsigned char	reverse_bits(unsigned char octet);
 
-Example:
+例:
 
   1 byte
 _____________

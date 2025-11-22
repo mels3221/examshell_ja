@@ -3,15 +3,15 @@ Expected files   : fprime.c
 Allowed functions: printf, atoi
 --------------------------------------------------------------------------------
 
-Write a program that takes a positive int and displays its prime factors on the
-standard output, followed by a newline.
+正の整数を受け取り、その素因数を標準出力に表示し、その後に改行を出力するプログラムを
+作成してください。
 
-Factors must be displayed in ascending order and separated by '*', so that
-the expression in the output gives the right result.
+因数は昇順で表示され、'*'で区切られる必要があります。これにより、出力内の式が正しい
+結果を与えます。
 
-If the number of parameters is not 1, simply display a newline.
+パラメータの数が1でない場合は、単に改行を表示してください。
 
-The input, when there is one, will be valid.
+入力がある場合、それは有効です。
 
 Examples:
 

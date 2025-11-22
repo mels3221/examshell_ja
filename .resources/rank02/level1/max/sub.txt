@@ -3,13 +3,12 @@ Expected files   : max.c
 Allowed functions:
 --------------------------------------------------------------------------------
 
-Write the following function:
+以下の関数を作成してください:
 
 int		max(int* tab, unsigned int len);
 
-The first parameter is an array of int, the second is the number of elements in
-the array.
+最初のパラメータはintの配列で、2番目のパラメータは配列内の要素数です。
 
-The function returns the largest number found in the array.
+関数は配列内で見つかった最大の数値を返します。
 
-If the array is empty, the function returns 0.
+配列が空の場合、関数は0を返します。

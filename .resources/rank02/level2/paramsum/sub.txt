@@ -3,10 +3,9 @@ Expected files   : paramsum.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that displays the number of arguments passed to it, followed by
-a newline.
+渡された引数の数を表示し、その後に改行を出力するプログラムを作成してください。
 
-If there are no arguments, just display a 0 followed by a newline.
+引数がない場合は、単に0を表示し、その後に改行を出力してください。
 
 Example:
 

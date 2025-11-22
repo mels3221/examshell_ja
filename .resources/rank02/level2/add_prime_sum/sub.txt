@@ -3,13 +3,13 @@ Expected files   : add_prime_sum.c
 Allowed functions: write, exit
 --------------------------------------------------------------------------------
 
-Write a program that takes a positive integer as argument and displays the sum
-of all prime numbers inferior or equal to it followed by a newline.
+正の整数を引数として受け取り、それ以下のすべての素数の合計を表示し、その後に改行を
+出力するプログラムを作成してください。
 
-If the number of arguments is not 1, or the argument is not a positive number,
-just display 0 followed by a newline.
+引数の数が1でない場合、または引数が正の数でない場合は、単に0を表示し、その後に改行を
+出力してください。
 
-Yes, the examples are right.
+はい、例は正しいです。
 
 Examples:
 

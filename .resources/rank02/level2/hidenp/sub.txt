@@ -3,15 +3,14 @@ Expected files   : hidenp.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program named hidenp that takes two strings and displays 1
-followed by a newline if the first string is hidden in the second one,
-otherwise displays 0 followed by a newline.
+2つの文字列を受け取り、最初の文字列が2番目の文字列に隠れている場合は1を表示し、その後に
+改行を出力し、そうでない場合は0を表示し、その後に改行を出力するhidenpという名前の
+プログラムを作成してください。
 
-Let s1 and s2 be strings. We say that s1 is hidden in s2 if it's possible to
-find each character from s1 in s2, in the same order as they appear in s1.
-Also, the empty string is hidden in any string.
+s1とs2を文字列とします。s1がs2に隠れているとは、s1の各文字をs2内で、s1に現れるのと同じ
+順序で見つけることができる場合を指します。また、空文字列はどの文字列にも隠れています。
 
-If the number of parameters is not 2, the program displays a newline.
+パラメータの数が2でない場合、プログラムは改行を表示します。
 
 Examples :
 
