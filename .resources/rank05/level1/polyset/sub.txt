@@ -1,3 +1,4 @@
+[EN]
 Assigment name: Polyset
 Expected File: searchable_array_bag.cpp, searchable_array_bag.hpp,
 searchable_tree_bg.cpp, searchable_tree_bag.hpp, set.cpp, set.hpp
@@ -23,3 +24,27 @@ Second Part:
 Implement the class set that will wrap a searchable_bag and turn it into a set.
 You will find in this dir a main that must compile with your code.
 All classes should be under orthodox canonical form. Don't forget the const.
+
+[JA]
+課題名: Polyset
+提出ファイル: searchable_array_bag.cpp, searchable_array_bag.hpp,
+searchable_tree_bg.cpp, searchable_tree_bag.hpp, set.cpp, set.hpp
+
+このディレクトリには、いくつかのクラスがあります：
+- bag: バッグを表す抽象クラス
+- searchable_bag: 検索機能を持つバッグを表す抽象クラス
+- array_bag: 配列を基礎データ構造として使用したバッグの実装
+- tree_bag: 二分探索木を基礎データ構造として使用したバッグの実装
+
+setやbagが何かを知らない場合は（恥ずかしい！）、
+添付ファイルshame.en.txtを読んでください。
+
+第1部：
+検索機能を持たないバッグはあまり有用ではないため、
+array_bagとtree_bagを継承し、searchable bag抽象クラスを実装する
+searchable_array_bagとsearchable_tree_bagの2つのクラスを実装してください。
+
+第2部：
+searchable_bagをラップしてsetに変換するクラスsetを実装してください。
+このディレクトリには、あなたのコードでコンパイルする必要があるmainがあります。
+すべてのクラスは正統的正規形式である必要があります。constを忘れないでください。
