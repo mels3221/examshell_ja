@@ -17,7 +17,7 @@ if [[ "$rank" == "rank02" ]]; then
     elif [[ "$level" == *"level3"* ]]; then
         qsub=(flood_fill fprime ft_itoa ft_split rev_wstr rostring ft_list_foreach sort_int_tab sort_list ft_list_remove_if)
     else
-        echo "Invalid level: $level for rank02"
+        echo "無効なレベルです: $level for rank02"
         exit 1
     fi
 elif [[ "$rank" == "rank03" ]]; then
@@ -26,7 +26,7 @@ elif [[ "$rank" == "rank03" ]]; then
     elif [[ "$level" == *"level2"* ]]; then
         qsub=(n_queens  permutations	powerset  rip  tsp)
     else
-        echo "Invalid level: $level for rank03"
+        echo "無効なレベルです: $level for rank03"
         exit 1
     fi
 elif [[ "$rank" == "rank04" ]]; then
@@ -35,11 +35,11 @@ elif [[ "$rank" == "rank04" ]]; then
     elif [[ "$level" == *"level2"* ]]; then
         qsub=(argo vbc)
     else
-        echo "Invalid level: $level for rank04"
+        echo "無効なレベルです: $level for rank04"
         exit 1
     fi
 else
-    echo "Invalid rank: $rank"
+    echo "無効なrankです: $rank"
     exit 1
 fi
 
@@ -83,9 +83,9 @@ while true; do
     subject=$(cat sub.txt)
     if [ $i -eq $(($num)) ]; then
     clear
-        echo "These questions at $level are completed."
+        echo "$levelの全問題が完了しました。"
         echo "=============================================="
-        read -rp "${GREEN}${BOLD}Please press enter for return to the menu.${RESET}" enterx
+        read -rp "${GREEN}${BOLD}Enterキーを押してメニューに戻る${RESET}" enterx
         sleep 2
         cd ../../main
         bash menu.sh
@@ -95,7 +95,7 @@ while true; do
         clear
         echo -e "${WHITE}$subject${RESET}"
         echo
-        echo "Please type 'test' to test code, 'next' for next or 'exit' for exit."
+        echo "'test'でコードをテスト、'next'で次の問題へ、'exit'で終了します。"
         echo
         read -rp "/>" input
         case $input in
@@ -116,12 +116,12 @@ while true; do
 
                 if kill -0 $pid 2>/dev/null; then
                 echo "$(tput setaf 1)$(tput bold)TIMEOUT$(tput sgr 0)"
-                echo "It can be because of infinite loop ∞"
-                echo "Please check your code or just try again."
+                echo "無限ループの可能性があります ∞"
+                echo "コードを確認するか、もう一度お試しください。"
                 kill $pid 2>/dev/null
                 fi
                 echo "=============================================="
-                read -rp "${GREEN}${BOLD}Please press enter to continue your practice.${RESET}" enter
+                read -rp "${GREEN}${BOLD}Enterキーを押して練習を続ける${RESET}" enter
                 break
                 ;;
             menu)
@@ -145,7 +145,7 @@ while true; do
                 exit 1
                 ;;
       	    *)
-    		echo "Please type 'test' to test code, 'next' for next or 'exit' to quit."
+    		echo "'test'でコードをテスト、'next'で次の問題へ、'exit'で終了します。"
     		;;
         esac
     done   

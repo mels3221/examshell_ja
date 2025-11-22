@@ -56,23 +56,23 @@ prepare_subject() {
     esac
 
     cd "$base_dir/../$rank/$level/$chosen" || {
-        echo -e "${RED}Subject folder not found.${RESET}"
+        echo -e "${RED}課題フォルダが見つかりません。${RESET}"
         exit 1
     }
 
     clear
-    echo -e "${CYAN}${BOLD}Your subject: $chosen${RESET}"
+    echo -e "${CYAN}${BOLD}あなたの課題: $chosen${RESET}"
     echo "=================================================="
     cat sub.txt
     echo
     echo -e "=================================================="
-    echo -e "${YELLOW}Type 'test' to test your code, 'next' to get a new question, or 'exit' to quit.${RESET}"
+    echo -e "${YELLOW}'test'でコードをテスト、'next'で新しい問題を取得、'exit'で終了します。${RESET}"
 }
 
 # Initial subject selection
 if [ -f "$subject_file" ]; then
     chosen=$(cat "$subject_file")
-    echo -e "${BLUE}🔁 Resuming with previously chosen subject: $chosen${RESET}"
+    echo -e "${BLUE}🔁 前回選択した課題を再開します: $chosen${RESET}"
 else
     pick_new_subject
     chosen=$(cat "$subject_file")
@@ -89,7 +89,7 @@ while true; do
     case $command in
         test)
             if [ -f "tester.sh" ]; then
-                echo -e "${BLUE}Running tester...${RESET}"
+                echo -e "${BLUE}テスターを実行中...${RESET}"
                 bash tester.sh
                 echo -e "${CYAN}Test completed. Continue working or type 'next' for a new subject.${RESET}"
             else
@@ -103,7 +103,7 @@ while true; do
             prepare_subject
             ;;
         exit)
-            echo -e "${RED}Exiting exam mode...${RESET}"
+            echo -e "${RED}試験モードを終了します...${RESET}"
             rm -f "$subject_file"
             cd "$base_dir"
             exit 0

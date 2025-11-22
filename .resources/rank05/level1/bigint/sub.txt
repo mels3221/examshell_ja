@@ -15,19 +15,22 @@ Your bigint must be printable with the << operator (in base 10) and the output
 should not contain any leading zeros.
 You will find a main in this directory that must work with your class
 
-[TR]
-Bilgisayar bilimlerinde bignum, keyfi bir hassasiyetteki sayıyı temsil eden bir nesnedir.
-Bu, herhangi bir hassasiyet kaybı olmadan SIZE_MAX değerinden büyük bir sayıyı depolamak istediğinizde kullanışlıdır.
-Bu genellikle sayının farklı "kısımlarını" içeren bir dizi veya dize depolayarak elde edilir.
+[JA]
+課題名 : bigint
+提出ファイル : bigint.hpp, bigint.cpp
+--------------------------------------------------------------------------------
+コンピュータサイエンスにおいて、bignumは任意精度の数値を表すオブジェクトです。
+これは、精度を失うことなくSIZE_MAXより大きな数値を保存したい場合に便利です。
+これは通常、数値の異なる「部分」を含む配列または文字列を格納することで実現されます。
 
-keyfi bir hassasiyetteki işaretsiz tamsayıyı depolayacak bigint adlı bir sınıf oluşturun.
-Sınıfınız toplama, karşılaştırma ve "rakam kaydırma" işlemlerini desteklemelidir
-(bit kaydırma gibi, ancak bitleri kaydırmak yerine 10 tabanındaki rakamları kaydırırsınız
-örneğin: (42 << 3 == 42000) ve (1337 >> 2 == 13)).
+任意精度の符号なし整数を格納するbigintというクラスを作成してください。
+クラスは加算、比較、および「桁シフト」をサポートする必要があります（ビットシフトのようなものですが、
+ビットをシフトする代わりに10進数の桁をシフトします。例:
+(42 << 3 == 42000) および (1337 >> 2 == 13)）。
 
-bigint değeriniz << operatörüyle (10 tabanında) yazdırılabilir olmalı ve çıktıda başta sıfır bulunmamalıdır.
+bigintは<<演算子で（10進数で）出力可能である必要があり、出力には先頭のゼロを含めないでください。
 
-Bu dizinde, sınıfınızla uyumlu olması gereken bir main bulacaksınız.
+このディレクトリには、クラスで動作する必要があるmainがあります。
 
 [SUBJECT MAIN]
 #include "bigint.hpp"

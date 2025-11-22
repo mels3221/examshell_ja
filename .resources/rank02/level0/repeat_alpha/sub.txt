@@ -3,15 +3,14 @@ Expected files   : repeat_alpha.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program called repeat_alpha that takes a string and display it
-repeating each alphabetical character as many times as its alphabetical index,
-followed by a newline.
+文字列を受け取り、各アルファベット文字をそのアルファベット順の番号だけ繰り返し表示し、
+その後改行を出力するrepeat_alphaというプログラムを作成してください。
 
-'a' becomes 'a', 'b' becomes 'bb', 'e' becomes 'eeeee', etc...
+'a'は'a'になり、'b'は'bb'になり、'e'は'eeeee'になります。
 
-Case remains unchanged.
+大文字小文字は変更されません。
 
-If the number of arguments is not 1, just display a newline.
+引数の数が1でない場合は、単に改行を表示してください。
 
 Examples:
 

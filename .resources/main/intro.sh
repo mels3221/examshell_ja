@@ -3,21 +3,21 @@ mkdir ../../rendu
 clear
 bash label.sh
 printf "${CYAN}%s${RESET}\n" "╔═══════════════════════════════════════════════════════════╗"
-printf "${BLUE}%s${GREEN}%s${BLUE}%s${RESET}\n" "║" "    ⚡ EXAM 42 PRACTICE TEST - MAIN MENU ⚡    " "║"
+printf "${BLUE}%s${GREEN}%s${BLUE}%s${RESET}\n" "║" "    ⚡ EXAM 42 模擬試験 - メインメニュー ⚡    " "║"
 printf "${CYAN}%s${RESET}\n" "╠═══════════════════════════════════════════════════════════╣"
 printf "${BLUE}%s${RESET}\n" "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
 printf "${GREEN}%s${RESET}\n"  "◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "🔄 1. Commands"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "🚀 2. Exam Rank 02"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "📋 3. Exam Rank 03"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 4. Exam Rank 04"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 5. Exam Rank 05"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "📁 6. Open Rendu Folder"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "🔄 1. コマンド一覧"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "🚀 2. 試験 Rank 02"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "📋 3. 試験 Rank 03"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 4. 試験 Rank 04"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 5. 試験 Rank 05"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "📁 6. Renduフォルダを開く"
 #printf "${YELLOW}${BOLD}%s${RESET}\n" "6. Update Shell"
 printf "${GREEN}%s${RESET}\n"  "◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆"
 printf "${BLUE}%s${RESET}\n" "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
 printf "${CYAN}%s${RESET}\n" "╚═══════════════════════════════════════════════════════════╝"
-printf "${GREEN}${BOLD}Enter your choice (1-5): ${RESET}"
+printf "${GREEN}${BOLD}選択してください (1-5): ${RESET}"
 read opt
 case $opt in
     1)
@@ -55,7 +55,7 @@ case $opt in
         ;;
     
     *)
-        echo "Invalid choice. Please enter a number from 1 to 6."
+        echo "無効な選択です。1から6の数字を入力してください。"
         sleep 1
         clear
         bash menu.sh

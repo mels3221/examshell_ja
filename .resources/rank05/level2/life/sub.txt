@@ -1,3 +1,4 @@
+[EN]
 Assignment name : life
 Expected files : *.c *.h
 Allowed functions: atoi, read, putchar, malloc, calloc, realloc, free
@@ -20,6 +21,53 @@ board and print the result in stdout (each cell alive will be represented by
 the character 'O' and each dead cell will be represented by a space)
 each cell outside of the array will be considered dead
 Example:
+$> echo 'sdxddssaaww' | ./a.out 5 5 0 | cat -e
+$
+OOO $
+O O $
+OOO $
+$
+$> echo 'sdxssdswdxddddsxaadwxwdxwaa' | ./a.out 10 6 0 | cat -e
+$
+O OOO $
+O O $
+OOO O $
+O OOO $
+$
+$> echo 'dxss' | ./a.out 3 3 0 | cat -e
+O $
+O $
+O $
+$> echo 'dxss' | ./a.out 3 3 1 | cat -e
+$
+OOO$
+$
+$> echo 'dxss' | ./a.out 3 3 2 | cat -e
+O $
+O $
+O $
+
+[JA]
+課題名 : life
+提出ファイル : *.c *.h
+使用可能な関数: atoi, read, putchar, malloc, calloc, realloc, free
+--------------------------------------------------------------------------------
+ライフゲームをシミュレートするプログラムを書かなければなりません。
+このプログラムのプロトタイプは以下の通りです：
+./life width height iterations
+widthとheightはボードの寸法で、iterationsはライフゲームの反復回数です。
+ボードの初期構成は、標準入力のコマンドシーケンスによって描画されます。
+ボードの左上隅から始まるペンを想像してください。
+各コマンドは以下の文字のいずれかです：
+
+w a s d -> ペンを上、左、下、右に移動します。
+x -> ペンを上げたり下げたりして、描画を開始または停止します。
+
+ファイルの終わりに達したら、プログラムはこのボード上でライフゲームをシミュレートし、
+結果をstdoutに出力する必要があります（生きている各セルは文字'O'で表され、
+死んでいる各セルはスペースで表されます）
+配列の外側の各セルは死んでいると見なされます
+例：
 $> echo 'sdxddssaaww' | ./a.out 5 5 0 | cat -e
 $
 OOO $

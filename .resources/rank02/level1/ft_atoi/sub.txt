@@ -3,11 +3,10 @@ Expected files   : ft_atoi.c
 Allowed functions: None
 --------------------------------------------------------------------------------
 
-Write a function that converts the string argument str to an integer (type int)
-and returns it.
+文字列引数strを整数(int型)に変換して返す関数を作成してください。
 
-It works much like the standard atoi(const char *str) function, see the man.
+これは標準のatoi(const char *str)関数とほぼ同じように動作します。manを参照してください。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 int	ft_atoi(const char *str);

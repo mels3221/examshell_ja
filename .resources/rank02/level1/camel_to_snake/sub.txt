@@ -3,14 +3,12 @@ Expected files   : camel_to_snake.c
 Allowed functions: malloc, free, realloc, write
 --------------------------------------------------------------------------------
 
-Write a program that takes a single string in lowerCamelCase format
-and converts it into a string in snake_case format.
+lowerCamelCase形式の単一の文字列を受け取り、それをsnake_case形式の文字列に変換する
+プログラムを作成してください。
 
-A lowerCamelCase string is a string where each word begins with a capital letter
-except for the first one.
+lowerCamelCase文字列とは、最初の単語を除いて各単語が大文字で始まる文字列です。
 
-A snake_case string is a string where each word is in lower case, separated by
-an underscore "_".
+snake_case文字列とは、各単語が小文字で、アンダースコア"_"で区切られた文字列です。
 
 Examples:
 $>./camel_to_snake "hereIsACamelCaseWord"

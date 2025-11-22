@@ -14,7 +14,7 @@ display_animation() {
     for i in $(seq 1 $loop_count); do
         for frame in "${frames[@]}"; do
             clear_screen
-            printf "$(tput setaf 2)$(tput bold)Please wait... %s\n\n" "$frame"
+            printf "$(tput setaf 2)$(tput bold)お待ちください... %s\n\n" "$frame"
             sleep $duration
             $(tput sgr0)
         done

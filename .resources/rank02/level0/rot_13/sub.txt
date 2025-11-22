@@ -3,14 +3,14 @@ Expected files   : rot_13.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes a string and displays it, replacing each of its
-letters by the letter 13 spaces ahead in alphabetical order.
+文字列を受け取り、各文字をアルファベット順で13文字先の文字に置き換えて表示する
+プログラムを作成してください。
 
-'z' becomes 'm' and 'Z' becomes 'M'. Case remains unaffected.
+'z'は'm'になり、'Z'は'M'になります。大文字小文字は影響を受けません。
 
-The output will be followed by a newline.
+出力の後には改行が続きます。
 
-If the number of arguments is not 1, the program displays a newline.
+引数の数が1でない場合、プログラムは改行を表示します。
 
 Example:
 

@@ -3,18 +3,17 @@ Expected files   : alpha_mirror.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program called alpha_mirror that takes a string and displays this string
-after replacing each alphabetical character by the opposite alphabetical
-character, followed by a newline.
+文字列を受け取り、各アルファベット文字を反対側のアルファベット文字に置き換えた後の
+文字列を表示し、その後に改行を出力するalpha_mirrorというプログラムを作成してください。
 
-'a' becomes 'z', 'Z' becomes 'A'
-'d' becomes 'w', 'M' becomes 'N'
+'a'は'z'になり、'Z'は'A'になります
+'d'は'w'になり、'M'は'N'になります
 
-and so on.
+などのようになります。
 
-Case is not changed.
+大文字小文字は変更されません。
 
-If the number of arguments is not 1, display only a newline.
+引数の数が1でない場合は、改行のみを表示してください。
 
 Examples:
 

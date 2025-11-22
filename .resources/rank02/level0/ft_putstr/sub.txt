@@ -3,11 +3,10 @@ Expected files   : ft_putstr.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a function that displays a string on the standard output.
+標準出力に文字列を表示する関数を作成してください。
 
-The pointer passed to the function contains the address of the string's first
-character.
+関数に渡されるポインタには、文字列の最初の文字のアドレスが格納されています。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 void	ft_putstr(char *str);

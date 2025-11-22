@@ -3,9 +3,8 @@ Expected files   : ft_swap.c
 Allowed functions:
 --------------------------------------------------------------------------------
 
-Write a function that swaps the contents of two integers the adresses of which
-are passed as parameters.
+パラメータとして渡されたアドレスにある2つの整数の内容を入れ替える関数を作成してください。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 void	ft_swap(int *a, int *b);

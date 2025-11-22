@@ -3,18 +3,15 @@ Expected files   : do_op.c
 Allowed functions: atoi, printf, write
 --------------------------------------------------------------------------------
 
-Write a program that takes three strings:
-- The first and the third one are representations of base-10 signed integers
-  that fit in an int.
-- The second one is an arithmetic operator chosen from: + - * / %
+3つの文字列を受け取るプログラムを作成してください:
+- 1番目と3番目の文字列は、int型に収まる10進数の符号付き整数の表現です。
+- 2番目の文字列は、+ - * / % から選択された算術演算子です。
 
-The program must display the result of the requested arithmetic operation,
-followed by a newline. If the number of parameters is not 3, the program
-just displays a newline.
+プログラムは要求された算術演算の結果を表示し、その後に改行を出力する必要があります。
+パラメータの数が3でない場合、プログラムは単に改行を表示します。
 
-You can assume the string have no mistakes or extraneous characters. Negative
-numbers, in input or output, will have one and only one leading '-'. The
-result of the operation fits in an int.
+文字列には間違いや余分な文字がないと仮定できます。入力または出力の負の数には、
+1つだけ先頭に'-'が付きます。演算の結果はint型に収まります。
 
 Examples:
 

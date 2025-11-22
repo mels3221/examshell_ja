@@ -3,9 +3,9 @@ Expected files	: ft_strcspn.c
 Allowed functions: None
 ---------------------------------------------------------------
 
-Reproduce exactly the behavior of the function strcspn
-(man strcspn).
+strcspn関数の動作を正確に再現してください
+(man strcspn)。
 
-The function should be prototyped as follows:
+関数は以下のようにプロトタイプ宣言する必要があります:
 
 size_t	ft_strcspn(const char *s, const char *reject);

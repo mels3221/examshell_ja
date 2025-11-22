@@ -3,10 +3,10 @@ Expected files   : ft_strrev.c
 Allowed functions:
 --------------------------------------------------------------------------------
 
-Write a function that reverses (in-place) a string.
+文字列を(その場で)反転させる関数を作成してください。
 
-It must return its parameter.
+パラメータを返す必要があります。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 char    *ft_strrev(char *str);

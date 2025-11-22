@@ -3,14 +3,14 @@ Expected files   : rotone.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes a string and displays it, replacing each of its
-letters by the next one in alphabetical order.
+文字列を受け取り、各文字をアルファベット順で次の文字に置き換えて表示する
+プログラムを作成してください。
 
-'z' becomes 'a' and 'Z' becomes 'A'. Case remains unaffected.
+'z'は'a'になり、'Z'は'A'になります。大文字小文字は影響を受けません。
 
-The output will be followed by a \n.
+出力の後には\nが続きます。
 
-If the number of arguments is not 1, the program displays \n.
+引数の数が1でない場合、プログラムは\nを表示します。
 
 Example:
 

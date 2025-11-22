@@ -3,10 +3,9 @@ Expected files   : rev_print.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that takes a string, and displays the string in reverse
-followed by a newline.
+文字列を受け取り、その文字列を逆順に表示し、その後に改行を出力するプログラムを作成してください。
 
-If the number of parameters is not 1, the program displays a newline.
+パラメータの数が1でない場合、プログラムは改行を表示します。
 
 Examples:
 

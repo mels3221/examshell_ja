@@ -3,12 +3,12 @@ source colors.sh
 
 clear
 printf "${CYAN}%s${RESET}\n" "╔═══════════════════════════════════════════════════════════╗"
-printf "${BLUE}%s${GREEN}%s${BLUE}%s${RESET}\n" "║" "            📄 EXAM RANK 04 - MODE SELECTION            " "║"
+printf "${BLUE}%s${GREEN}%s${BLUE}%s${RESET}\n" "║" "            📄 試験 RANK 04 - モード選択            " "║"
 printf "${CYAN}%s${RESET}\n" "╚═══════════════════════════════════════════════════════════╝"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "1. Level Mode"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "2. Real Exam Mode"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "3. Back to Main Menu"
-printf "${GREEN}${BOLD}Enter your choice (1-3): ${RESET}"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "1. レベルモード"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "2. 本番試験モード"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "3. メインメニューに戻る"
+printf "${GREEN}${BOLD}選択してください (1-3): ${RESET}"
 read rank04_opt
 case $rank04_opt in
     1)
@@ -21,7 +21,7 @@ case $rank04_opt in
         bash intro.sh
         ;;
     *)
-        echo "Invalid choice. Please enter 1, 2, or 3."
+        echo "無効な選択です。1、2、または3を入力してください。"
         sleep 1
         bash rank04_menu.sh
         ;;

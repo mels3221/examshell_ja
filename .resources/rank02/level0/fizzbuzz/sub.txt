@@ -3,14 +3,13 @@ Expected files   : fizzbuzz.c
 Allowed functions: write
 --------------------------------------------------------------------------------
 
-Write a program that prints the numbers from 1 to 100, each separated by a
-newline.
+1から100までの数字を、それぞれ改行で区切って出力するプログラムを作成してください。
 
-If the number is a multiple of 3, it prints 'fizz' instead.
+数字が3の倍数の場合は、代わりに'fizz'と出力してください。
 
-If the number is a multiple of 5, it prints 'buzz' instead.
+数字が5の倍数の場合は、代わりに'buzz'と出力してください。
 
-If the number is both a multiple of 3 and a multiple of 5, it prints 'fizzbuzz' instead.
+数字が3と5の両方の倍数の場合は、代わりに'fizzbuzz'と出力してください。
 
 Example:
 

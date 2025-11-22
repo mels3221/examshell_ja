@@ -45,23 +45,23 @@ prepare_subject() {
     touch "$base_dir/../../rendu/$chosen/$chosen.c"
 
     cd "$base_dir/../$rank/$level/$chosen" || {
-        echo -e "${RED}Subject folder not found.${RESET}"
+        echo -e "${RED}課題フォルダが見つかりません。${RESET}"
         exit 1
     }
 
     clear
-    echo -e "${CYAN}${BOLD}Your subject: $chosen${RESET}"
+    echo -e "${CYAN}${BOLD}あなたの課題: $chosen${RESET}"
     echo "=================================================="
     cat sub.txt
     echo
     echo -e "=================================================="
-    echo -e "${YELLOW}Type 'test' to test your code, 'next' to get a new question, or 'exit' to quit.${RESET}"
+    echo -e "${YELLOW}'test'でコードをテスト、'next'で新しい問題を取得、'exit'で終了します。${RESET}"
 }
 
 # Initial subject selection
 if [ -f "$subject_file" ]; then
     chosen=$(cat "$subject_file")
-    echo -e "${BLUE}🔁 Resuming with previously chosen subject: $chosen${RESET}"
+    echo -e "${BLUE}🔁 前回選択した課題を再開します: $chosen${RESET}"
 else
     pick_new_subject
 fi
@@ -74,33 +74,33 @@ while true; do
     case "$input" in
         test)
             clear
-            echo -e "${GREEN}Running tester.sh...${RESET}"
+            echo -e "${GREEN}tester.shを実行中...${RESET}"
             output=$(./tester.sh 2>&1)
             echo "$output" | tee tester_output.log
 
             if echo "$output" | grep -q -E "PASSED|SUCCESS"; then
-                echo -e "${GREEN}${BOLD}✔️  Passed!${RESET}"
+                echo -e "${GREEN}${BOLD}✔️  合格!${RESET}"
                 rm -f "$subject_file"
                 sleep 1
                 exit 0
             else
-                echo -e "${RED}${BOLD}❌  Failed.${RESET}"
+                echo -e "${RED}${BOLD}❌  不合格。${RESET}"
                 sleep 1
                 exit 1
             fi
             ;;
         next)
-            echo -e "${BLUE}🔄 Picking a new subject...${RESET}"
+            echo -e "${BLUE}🔄 新しい課題を選択中...${RESET}"
             pick_new_subject
             chosen=$(cat "$subject_file")
             prepare_subject
             ;;
         exit)
-            echo "Exiting..."
+            echo "終了します..."
             exit 0
             ;;
         *)
-            echo "Please type 'test' to test code, 'next' for next or 'exit' for exit."
+            echo "'test'でコードをテスト、'next'で次の問題へ、'exit'で終了します。"
             ;;
     esac
 done

@@ -3,8 +3,8 @@ Expected files   : ft_strlen.c
 Allowed functions:
 --------------------------------------------------------------------------------
 
-Write a function that returns the length of a string.
+文字列の長さを返す関数を作成してください。
 
-Your function must be declared as follows:
+関数は以下のように宣言する必要があります:
 
 int	ft_strlen(char *str);

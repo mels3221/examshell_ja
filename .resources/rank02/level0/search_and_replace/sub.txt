@@ -3,14 +3,14 @@ Expected files   : search_and_replace.c
 Allowed functions: write, exit
 --------------------------------------------------------------------------------
 
-Write a program called search_and_replace that takes 3 arguments, the first
-arguments is a string in which to replace a letter (2nd argument) by
-another one (3rd argument).
+3つの引数を取るsearch_and_replaceというプログラムを作成してください。最初の引数は
+文字を置き換える対象の文字列、2番目の引数は置き換える文字、3番目の引数は置き換え後の
+文字です。
 
-If the number of arguments is not 3, just display a newline.
+引数の数が3でない場合は、単に改行を表示してください。
 
-If the second argument is not contained in the first one (the string)
-then the program simply rewrites the string followed by a newline.
+2番目の引数が最初の引数(文字列)に含まれていない場合、プログラムは単に文字列を
+書き出し、その後に改行を出力します。
 
 Examples:
 $>./search_and_replace "Papache est un sabre" "a" "o"
