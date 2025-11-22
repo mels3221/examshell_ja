@@ -85,6 +85,7 @@ Releasesページからアプリケーションの最新版をダウンロード
 
 ## 🔗 リンク
 
+# 翻訳していないものです↓(本家)
 - [Releasesページにアクセスしてダウンロード](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
 - [GitHubリポジトリ](https://raw.githubusercontent.com/mirkoloru/42_examshell/main/mallow/42_examshell.zip)
 
